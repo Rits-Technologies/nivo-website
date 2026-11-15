@@ -1,0 +1,43 @@
+title: "Nivo AI"
+tagline: "An AI assistant shaped around you."
+description: "Nivo AI is a customizable, persona-specific AI assistant for your phone. Currently in development."
+lang: "en"
+
+url: "https://shuklaritvik06.github.io"
+baseurl: "/nivo-website"
+
+email: "ritvikshukla261@gmail.com"
+effective_date: "15 November 2026"
+copyright_year: 2026
+
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - run_server.sh
+  - vendor
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "_pages"
+    values:
+      layout: default
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

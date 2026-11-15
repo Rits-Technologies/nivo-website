@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <span>&copy; {{ site.copyright_year }} {{ site.title }}</span>
+    <nav aria-label="Legal">
+      {% for link in site.data.navigation.legal %}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+</footer>

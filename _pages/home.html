@@ -1,0 +1,46 @@
+---
+permalink: /
+title: "Nivo AI"
+body_class: page--home
+---
+<div class="hero">
+  <div class="container">
+    <p class="eyebrow"><span class="dot"></span>In development</p>
+    <h1>An AI assistant<br>shaped around you.</h1>
+    <p class="hero__lede">Nivo AI is a mobile assistant you configure to fit who you are and what you do. One assistant, many personas, built to help with whatever you bring to it.</p>
+    <div class="hero__status">status: building &nbsp;·&nbsp; platform: Android first &nbsp;·&nbsp; release: TBA</div>
+  </div>
+</div>
+
+<section id="principles">
+  <div class="container">
+    <h2 class="section-title"><span>01</span>Principles</h2>
+    <div class="grid">
+      {% for item in site.data.principles %}
+        <div class="cell">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <h2 class="section-title"><span>02</span>How it works</h2>
+    <ol class="steps">
+      {% for step in site.data.steps %}
+        <li><div>{{ step }}</div></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section id="status">
+  <div class="container">
+    <h2 class="section-title"><span>03</span>Status</h2>
+    <p>Nivo AI is under active development and not yet publicly available. Features described here may change before release.</p>
+    <p>Questions or feedback: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </div>
+</section>

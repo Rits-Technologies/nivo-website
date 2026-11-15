@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">nivo.ai</a>
+    <nav class="site-nav" aria-label="Main">
+      {% for link in site.data.navigation.main %}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

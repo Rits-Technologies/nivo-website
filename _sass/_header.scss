@@ -1,0 +1,30 @@
+.site-header {
+  border-bottom: 1px solid var(--line);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+.brand {
+  font-family: var(--mono);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-nav a {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 20px;
+
+  &:hover {
+    color: var(--fg);
+  }
+}
