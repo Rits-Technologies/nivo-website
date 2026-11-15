@@ -3,44 +3,33 @@ permalink: /
 title: "Nivo AI"
 body_class: page--home
 ---
-<div class="hero">
-  <div class="container">
-    <p class="eyebrow"><span class="dot"></span>In development</p>
-    <h1>An AI assistant<br>shaped around you.</h1>
-    <p class="hero__lede">Nivo AI is a mobile assistant you configure to fit who you are and what you do. One assistant, many personas, built to help with whatever you bring to it.</p>
-    <div class="hero__status">status: building &nbsp;·&nbsp; platform: Android first &nbsp;·&nbsp; release: TBA</div>
-  </div>
-</div>
+<article class="container">
+  <header class="paper-head">
+    <h1>Nivo AI</h1>
+    <p class="paper-head__sub">A customizable, persona-specific AI assistant</p>
+  </header>
 
-<section id="principles">
-  <div class="container">
-    <h2 class="section-title"><span>01</span>Principles</h2>
-    <div class="grid">
-      {% for item in site.data.principles %}
-        <div class="cell">
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.text }}</p>
-        </div>
-      {% endfor %}
-    </div>
+  <div class="abstract">
+    <span class="abstract__label">Abstract.</span>
+    Nivo AI is a mobile assistant that you configure to fit who you are and what you do. One assistant, many personas, built to help with whatever you bring to it. The project is in active development and is not yet publicly available.
   </div>
-</section>
 
-<section id="how-it-works">
-  <div class="container">
-    <h2 class="section-title"><span>02</span>How it works</h2>
-    <ol class="steps">
-      {% for step in site.data.steps %}
-        <li><div>{{ step }}</div></li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
+  <h2 id="principles">1. Principles</h2>
+  <dl class="principles">
+    {% for item in site.data.principles %}
+      <dt>{{ item.title }}</dt>
+      <dd>{{ item.text }}</dd>
+    {% endfor %}
+  </dl>
 
-<section id="status">
-  <div class="container">
-    <h2 class="section-title"><span>03</span>Status</h2>
-    <p>Nivo AI is under active development and not yet publicly available. Features described here may change before release.</p>
-    <p>Questions or feedback: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-  </div>
-</section>
+  <h2 id="how-it-works">2. How it works</h2>
+  <ol>
+    {% for step in site.data.steps %}
+      <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+
+  <h2 id="status">3. Status</h2>
+  <p>Nivo AI is under active development, with Android planned first and no release date set. Features described here may change before release.</p>
+  <p>Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</article>

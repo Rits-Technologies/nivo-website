@@ -1,22 +1,10 @@
-@media (max-width: $breakpoint-sm) {
-  .site-nav a:nth-child(n + 3) {
-    display: none;
+@media (max-width: 640px) {
+  body {
+    font-size: 17px;
   }
 
-  .hero {
-    padding-top: 56px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cell {
-    border-right: 0 !important;
-    border-bottom: 1px solid var(--line) !important;
-
-    &:last-child {
-      border-bottom: 0 !important;
-    }
+  .abstract {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
